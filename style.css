@@ -1,3 +1,7 @@
-* {
-    background-color: blanchedalmond;
+:root {
+    --primary-bg: #1F567A;
+    --secondary-bg: #0C2231;
+    --primary: #D0EDF1;
+    --secondary: #EBF4FA; 
 }
+
