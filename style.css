@@ -123,6 +123,17 @@ img {
 }
 
 
+/*              CONTACT SECTION          */
+
+
+
+.section-form    {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
 
 /*          FOOTER               */
 
@@ -133,8 +144,8 @@ footer {
     bottom: 0;
     position: fixed;
     width: 100%;
-/* 
-    display: none; */
+
+    display: none;
 
 }
 
