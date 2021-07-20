@@ -131,7 +131,25 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    max-width: 450px;
+    color: var(--primary);
+    padding-bottom: 50px;
 }
+
+.section-form h1 {
+    border-width: 0 0 5px;
+    border-style: solid;
+    padding-bottom: 8px;
+    border-color: var(--primary-bg);
+    text-align: center;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
 
 
 
@@ -145,7 +163,7 @@ footer {
     position: fixed;
     width: 100%;
 
-    display: none;
+    /* display: none; */
 
 }
 
