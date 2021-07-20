@@ -1,7 +1,11 @@
-/*        ALL ROOT BODY          */
+/*        GLOBAL          */
 
 * {
     box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -21,7 +25,10 @@ body {
 
 .nav {
     background-color: var(--primary-bg);
-    padding: 1em;        
+    padding: 1em;   
+    position: fixed;    
+    top: 0;
+    width: 100%; 
 }
 
 .nav .nav-container .nav-container--box {
@@ -40,6 +47,7 @@ body {
 .site-header {
     display: flex;
     justify-content: space-around;
+    padding-top: 50px;
 }
 
 .site-header .container {
@@ -51,7 +59,8 @@ body {
 
 .home-title h3, h4, img{
     display: flex;
-    justify-content: center;   
+    justify-content: center;    
+    text-align: center;       
 }
 
 img {
@@ -91,13 +100,39 @@ img {
 }
 
 .work h1 {
-    text-decoration: underline 5px solid var(--primary-bg);
+    border-width: 0 0 5px;
+    border-style: solid;
+    padding-bottom: 8px;
+    border-color: var(--primary-bg);
     text-align: center;
 }
 
 .work p {
     text-align: center;
 }
+
+
+.work img {padding-bottom: 10px;
+}
+
+
+/*           ABOUT SECTION             */
+
+.about {
+    display: flex;
+    justify-content: center;
+    color: var(--primary);
+    border-width: 0 0 1px;
+    border-style: solid;
+}
+
+.about h1 {
+    border-width: 0 0 5px;
+    border-style: solid;
+    padding-bottom: 8px;
+    border-color: var(--primary-bg);
+}
+
 
 
 /*          FOOTER               */
