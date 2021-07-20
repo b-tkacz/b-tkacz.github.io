@@ -91,7 +91,7 @@ img {
 
 /*  WORK SECTION  */
 
-.work {
+.section {
     display: flex;
     justify-content: center;
     color: var(--secondary);
@@ -99,7 +99,7 @@ img {
     padding-bottom: 40px;
 }
 
-.work h1 {
+.section h1 {
     border-width: 0 0 5px;
     border-style: solid;
     padding-bottom: 8px;
@@ -107,30 +107,19 @@ img {
     text-align: center;
 }
 
-.work p {
+.section p {
     text-align: center;
 }
 
 
-.work img {padding-bottom: 10px;
+.section img {padding-bottom: 10px;
 }
 
 
 /*           ABOUT SECTION             */
 
-.about {
-    display: flex;
-    justify-content: center;
-    color: var(--primary);
-    border-width: 0 0 1px;
-    border-style: solid;
-}
-
-.about h1 {
-    border-width: 0 0 5px;
-    border-style: solid;
-    padding-bottom: 8px;
-    border-color: var(--primary-bg);
+.section p {
+    max-width: 450px;
 }
 
 
