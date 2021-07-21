@@ -40,7 +40,17 @@ body {
 
 .nav a {
     text-decoration: none;
-    color: var(--primary);
+    color: var(--secondary);
+    border-radius: 50px;
+    padding: 10px;
+    
+}
+
+.nav a:hover {
+    border-radius: 27px;
+background: linear-gradient(315deg, #1c4d6e, #215c83);
+box-shadow:  -5px -5px 10px #1d5173,
+             5px 5px 10px #215b81;
 }
 
 
