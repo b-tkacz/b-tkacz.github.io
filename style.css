@@ -39,16 +39,21 @@ body {
 .nav a {
     text-decoration: none;
     color: var(--secondary);
-    border-radius: 50px;
+    /* border-radius: 50px; */
     padding: 10px;    
+    transition: 0.5s;
 }
 
 .nav a:hover {
-    border-radius: 27px;
-background: linear-gradient(315deg, #1c4d6e, #215c83);
-box-shadow:  -5px -5px 10px #1d5173,
-             5px 5px 10px #215b81;
+    letter-spacing: 3px;
+    position: static; 
+    transition: 1s;  
 }
+
+
+
+
+
 
 
 /*          SITE HEADER          */
@@ -127,7 +132,12 @@ img {
 }
 
 
-.section img {padding-bottom: 10px;
+.section img {padding-bottom: 25px;
+}
+
+.section img:hover {
+    filter: brightness(50%);
+    transition: 0.5s;
 }
 
 
@@ -192,14 +202,44 @@ button {
     align-self: flex-end;
     cursor: pointer;
     border: none;
-    background-color: var(--primary-bg);
+    background-color: var(--secondary-bg);
     color: var(--primary);
     font-size: medium;
+}
+
+
+.close {
+    float: right;
+    width: 10%;
+    margin: 9px;
 }
 
 button:hover {
     background-color: var(--primary);
     color: var(--primary-bg);
+}
+
+
+/*          MODAL            */
+
+.section-modal {
+    display: none;
+    position: fixed;
+    z-index: 1; 
+    right: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);
+}
+
+.section-form {
+    background-color: var(--primary-bg);
+    margin: 25%;
+    border-radius: 5px;
+    padding: 15px;
 }
 
 
@@ -212,18 +252,27 @@ footer {
     bottom: 0;
     position: fixed;
     width: 100%;
-    height: 35px;
-
-    /* display: none; */
-
+    height: 40px;
 }
 
-i {
+.footer-section {
+    padding: 4px;
+}
+
+footer i {
     color: var(--primary);
-    font-size: 25px;
-    padding-top: 5px;
+    font-size: 20px;
+    border: var(--primary) 1px solid;
+    border-radius: 100%;
+    padding: 5px 6px;
+    transition: 0.5s;
 }
 
+footer i:hover {
+    color: var(--primary-bg);
+    background-color: var(--primary);
+    transition: 1s;
+}
 
 
 

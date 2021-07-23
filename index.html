@@ -23,7 +23,7 @@
                 <a href="#home">Home</a>
                 <a href="#work">Work</a>
                 <a href="#about">About</a>                
-                <a href="#contact">Contact</a>
+                <a href="#contact" id="openModal">Contact</a>
             </div>
         </div>
     </div>
@@ -93,9 +93,10 @@
 
 
         <!--        CONTACT FORM SECTION           -->
-        <div class="section">
+        <div class="section-modal" id="modal">
             <div class="section-form"  id="contact">
-                <h1>Contact me</h1>
+                <button class="close">&times;</button>
+                <h1>Contact me</h1> 
                 <p>feel free to leave 
                     some feedback or message me about work
                     </p>
@@ -113,9 +114,13 @@
             </div>
         </div>
     <footer>
-        <a href="https://www.linkedin.com" target="blank"><i class="fab fa-linkedin-in"></i></a>
-        <a href="#"><i class="fas fa-envelope"></i></a>
-        <a href="https://www.github.io" target="blank"><i class="fab fa-github"></i></a>
+        <div class="footer-section">
+            <a href="https://www.linkedin.com" target="blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.github.io" target="blank"><i class="fab fa-github"></i></a>
+        </div>
     </footer>
+
+    <script src="/script.js"></script>
 </body>
 </html>
