@@ -39,7 +39,6 @@ body {
 .nav a {
     text-decoration: none;
     color: var(--secondary);
-    /* border-radius: 50px; */
     padding: 10px;    
     transition: 0.5s;
 }
