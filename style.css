@@ -237,7 +237,7 @@ button:hover {
 
 .section-form {
     background-color: var(--primary-bg);
-    margin: 25%;
+    margin: 15% auto;
     border-radius: 5px;
     padding: 15px;
 }
@@ -282,4 +282,12 @@ footer i:hover {
 /* @media screen and (min-width: 320px) {
     .site-header .container .home-title img {
     }
+} */
+
+/* @media screen and (MIN-width: 967px) { 
+    .section-form {
+        margin: 33%;
+        margin-left: 33%;
+    }
+    
 } */
