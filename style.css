@@ -19,6 +19,7 @@ body {
     margin: 0;
     font-family: 'Spartan', sans-serif;
     background-color: var(--secondary-bg);
+   
 }
 
 
@@ -117,6 +118,8 @@ img {
     padding-bottom: 40px;
 }
 
+
+
 .section h1 {
     border-width: 0 0 5px;
     border-style: solid;
@@ -146,8 +149,12 @@ img {
 
 .section p {
     max-width: 450px;
+
 }
 
+.about-content {
+    line-height: 25px;
+}
 
 /*              CONTACT SECTION          */
 
