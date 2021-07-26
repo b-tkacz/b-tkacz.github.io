@@ -129,13 +129,16 @@ img {
 }
 
 
-.section img {padding-bottom: 25px;
+.section img {
+    padding-bottom: 25px;
 }
 
 .section img:hover {
     filter: brightness(50%);
     transition: 0.5s;
 }
+
+
 
 
 /*           ABOUT SECTION             */
