@@ -154,9 +154,6 @@ img {
 
 
 .section-form    {
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* justify-content: flex-end; */
     max-width: 450px;
     color: var(--primary);
     padding-bottom: 50px;
@@ -274,21 +271,3 @@ footer i:hover {
     background-color: var(--primary);
     transition: 1s;
 }
-
-
-
-
-
-
-/* @media screen and (min-width: 320px) {
-    .site-header .container .home-title img {
-    }
-} */
-
-/* @media screen and (MIN-width: 967px) { 
-    .section-form {
-        margin: 33%;
-        margin-left: 33%;
-    }
-    
-} */
