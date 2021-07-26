@@ -77,7 +77,8 @@ body {
 .home-title h3, h4, img{
     display: flex;
     justify-content: center;    
-    text-align: center;       
+    text-align: center;    
+    font-weight: 500;
 }
 
 img {
