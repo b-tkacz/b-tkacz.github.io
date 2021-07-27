@@ -79,7 +79,7 @@ body {
     display: flex;
     justify-content: center;    
     text-align: center;    
-    font-weight: 500;
+    font-weight: 300;
 }
 
 img {
@@ -140,6 +140,18 @@ img {
 .section img:hover {
     filter: brightness(50%);
     transition: 0.5s;
+} 
+
+.work-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.work-img img {
+    margin: 15px;
+    display: flex;
+    justify-content: center;
 }
 
 
