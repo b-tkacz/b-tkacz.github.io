@@ -169,6 +169,7 @@ img {
 
 .work-img a:hover .tooltip {
     visibility: visible;
+    transition-delay:  0.2s;
 }
 
 
@@ -305,4 +306,25 @@ footer i:hover {
     color: var(--primary-bg);
     background-color: var(--primary);
     transition: 1s;
+}
+
+.footer-section .tooltip-footer {
+    visibility: hidden;
+    max-width: 300px;
+    background-color: var(--primary-bg);
+    color: var(--primary);
+    text-decoration: none;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 120%;
+    /* left: 50%; */
+    margin-left: -60px;
+}
+
+footer a:hover .tooltip-footer {
+    visibility: visible;
+    transition-delay:  0.2s;
 }
