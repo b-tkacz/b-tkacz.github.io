@@ -152,6 +152,24 @@ img {
     margin: 15px;
 }
 
+/*              TOOLTIP              */
+
+.tooltip {
+    visibility: hidden;
+    max-width: 300px;
+    background-color: var(--primary-bg);
+    color: var(--primary);
+    text-decoration: none;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+}
+
+.work-img a:hover .tooltip {
+    visibility: visible;
+}
 
 
 
