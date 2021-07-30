@@ -134,6 +134,8 @@ img {
 
 /*  WORK SECTION  */
 
+
+
 .section {
     display: flex;
     justify-content: center;
@@ -142,8 +144,22 @@ img {
     padding-bottom: 40px;
 }
 
-.section-title {
-    text-align: center;
+#work {
+    align-self: flex-end;
+}
+
+#about-txt {
+    display: flex;
+    justify-content: center;
+}
+
+.section-about {
+    max-width: 90%;
+}
+
+.section-work {
+    max-width: 90%;
+    margin: 0 5%;
 }
 
 
@@ -236,6 +252,10 @@ form {
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
+}
+
+::placeholder {
+    font-family: 'Spartan', sans-serif;
 }
 
 
