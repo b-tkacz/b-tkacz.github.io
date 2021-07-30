@@ -115,12 +115,16 @@ img {
     padding-bottom: 100px;
 }
 
+#intro-title {
+    text-align: center;
+}
+
 .intro {
     display: flex;
     justify-content: center;
     flex-direction: column;
     max-width: 90%;
-    text-align: center;
+    text-align: justify;
     max-width: 300px;
 }
 
@@ -138,6 +142,9 @@ img {
     padding-bottom: 40px;
 }
 
+.section-title {
+    text-align: center;
+}
 
 
 .section h1 {
@@ -149,7 +156,8 @@ img {
 }
 
 .section p {
-    text-align: center;
+    max-width: 450px;    
+    text-align: justify;
 }
 
 
@@ -196,10 +204,11 @@ img {
 
 /*           ABOUT SECTION             */
 
-.section p {
-    max-width: 450px;
-
+#about {
+    margin-top: 50px;
 }
+
+
 
 .about-content {
     line-height: 25px;
