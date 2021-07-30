@@ -1,3 +1,5 @@
+    //  MODAL 
+
 let modal = document.getElementById("modal");
 
 let btn = document.getElementById("openModal");

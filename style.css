@@ -86,6 +86,26 @@ img {
     max-width: 200px;
 }
 
+.home-title .tooltip-face {
+    visibility: hidden;
+    max-width: 300px;
+    background-color: var(--primary-bg);
+    color: var(--primary);
+    text-decoration: none;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 73%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.home-title:hover .tooltip-face {
+    visibility: visible;
+}
+
 
 /*          INTRO SECTION            */
 
@@ -310,6 +330,7 @@ footer i:hover {
 
 .footer-section .tooltip-footer {
     visibility: hidden;
+    font-size: 13px;
     max-width: 300px;
     background-color: var(--primary-bg);
     color: var(--primary);
