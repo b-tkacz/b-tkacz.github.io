@@ -351,6 +351,10 @@ footer i {
     transition: 0.5s;
 }
 
+footer a {
+    text-decoration: none;
+}
+
 footer i:hover {
     color: var(--primary-bg);
     background-color: var(--primary);
