@@ -123,9 +123,8 @@ img {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    max-width: 90%;
     text-align: justify;
-    max-width: 300px;
+    max-width: 350px;
 }
 
 .intro p {
