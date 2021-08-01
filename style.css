@@ -18,8 +18,7 @@ html {
 body {
     margin: 0;
     font-family: 'Spartan', sans-serif;
-    background-color: var(--secondary-bg);
-   
+    background-color: var(--secondary-bg);   
 }
 
 
@@ -34,6 +33,12 @@ body {
     position: fixed;    
     top: 0;
     width: 100%; 
+    z-index: 10;
+}
+
+.nav    .nav-container {
+    display: flex; 
+    justify-content: center;    
 }
 
 .nav .nav-container .nav-container--box {
@@ -140,8 +145,7 @@ img {
     display: flex;
     justify-content: center;
     color: var(--secondary);
-    padding-top: 40px;
-    padding-bottom: 40px;
+    margin-bottom: 200px;
 }
 
 #work {
@@ -155,11 +159,14 @@ img {
 
 .section-about {
     max-width: 90%;
+    padding-top: 50px;
+    /* margin-bottom: 250px; */
 }
 
 .section-work {
     max-width: 90%;
     margin: 0 5%;
+    padding-top: 50px;
 }
 
 
