@@ -55,7 +55,8 @@ body {
 
 .nav a:hover {
     letter-spacing: 3px;
-    position: static; 
+    position: static;
+    text-decoration: underline rgb(147, 207, 57) 3px solid; 
     transition: 1s;  
 }
 
@@ -390,3 +391,4 @@ footer a:hover .tooltip-footer {
     visibility: visible;
     transition-delay:  0.2s;
 }
+
