@@ -6,6 +6,8 @@
 
 html {
     scroll-behavior: smooth;
+    overflow:scroll
+    -webkit-overflow-scrolling: touch;
 }
 
 :root {
@@ -94,7 +96,6 @@ body {
 
 .dropdown-content a:hover {
       background-color: var(--secondary-bg);
-      text-decoration: none;
       letter-spacing: inherit;
 }
 
@@ -106,6 +107,15 @@ body {
     text-decoration: underline var(--secondary) 3px solid; 
   }
 
+  #checkbox {
+      display: none;
+  }
+
+  #checkbox:checked ~ .dropdown-content {
+    max-height: 200px;
+    padding: 15px 0;
+    transition: all 0.5s;
+ }
 
 
 
