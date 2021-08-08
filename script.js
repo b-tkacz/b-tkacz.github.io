@@ -21,6 +21,8 @@ window.onclick = function(event) {
 }
 
 
+// hoover 
+
 
 
 // BLURRED BACKGROUND
