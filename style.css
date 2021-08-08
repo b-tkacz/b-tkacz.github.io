@@ -46,7 +46,7 @@ body {
     justify-content: space-evenly;
 }
 
-.nav a {
+.nav a  {
     text-decoration: none var(--primary-bg);
     color: var(--secondary);
     padding: 10px;    
@@ -59,6 +59,50 @@ body {
     text-decoration: underline var(--secondary) 3px solid; 
     transition: 1s;  
 }
+
+/*          DROPDOWN         */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: inherit;
+    color: var(--secondary);
+    font-family: inherit;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--primary-bg);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: var(--secondary);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+.dropdown-content a:hover {
+      background-color: var(--secondary-bg);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    text-decoration: underline var(--secondary) 3px solid; 
+  }
 
 
 
@@ -340,6 +384,29 @@ button:hover {
 }
 
 
+/*      PROJECT 1        */
+
+.loading-text {
+    font-family: 'Spartan', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: var(--secondary);
+    font-size: 50px;
+}
+
+.bg {
+    background: url(/img/leio-mclaren-uKYqtJ1hCkA-unsplash.jpg ) no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    filter: blur(0px);
+}
+
 /*          FOOTER               */
 
 footer {
@@ -397,3 +464,15 @@ footer a:hover .tooltip-footer {
     transition-delay:  0.2s;
 }
 
+
+
+
+
+/*          MEDIA            */
+
+@media screen and (max-width: 400px) {
+   .nav a, .dropbtn {
+    font-size: 14px;
+    padding: 5px;
+   }
+  }
