@@ -94,6 +94,8 @@ body {
 
 .dropdown-content a:hover {
       background-color: var(--secondary-bg);
+      text-decoration: none;
+      letter-spacing: inherit;
 }
 
 .dropdown:hover .dropdown-content {
