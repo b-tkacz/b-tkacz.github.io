@@ -21,8 +21,23 @@ window.onclick = function(event) {
 }
 
 
-// hoover 
+// ON CLICK 
 
+// document.getElementById('dropBtn').onclick = function(){
+//   document.getElementById("dropDownContent").style.display = "block";
+  // function () {
+  // if (document.getElementById("dropDownContent").style.display = "block") {
+  //   document.getElementById("dropDownContent").style.display = "none";
+  // }
+// }
+
+
+
+
+
+// function dropdown () {
+//   if ()
+// }
 
 
 // BLURRED BACKGROUND
