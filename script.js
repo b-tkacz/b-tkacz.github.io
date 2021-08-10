@@ -25,16 +25,12 @@ window.onclick = function(event) {
 
 // document.getElementById('dropBtn').onclick = function(){
 //   document.getElementById("dropDownContent").style.display = "block";
-  // function () {
-  // if (document.getElementById("dropDownContent").style.display = "block") {
-  //   document.getElementById("dropDownContent").style.display = "none";
-  // }
 // }
 
-// function dropDown() {
+// document.getElementById('dropBtn').onclick = function () {
 //   let menu = document.getElementById("dropDownContent");
-//   if (menu.style.display === "block") {
-//     menu.style.display === "none";
+//   if (menu.style.display = "none") {
+//     menu.style.display ="block";
 //   }
 //   else {
 //     menu.style.display === "block";
