@@ -409,6 +409,51 @@ button:hover {
     filter: blur(0px);
 }
 
+
+
+
+/*              WEIGHT CONVERTER             */
+
+.converter-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+    margin: 1%;       
+    max-width: 300px auto; 
+    color: var(--secondary);
+    font-family: inherit;
+}
+
+.converter-title {
+    font-weight: 400;
+}
+
+
+
+.converter-content {
+
+}
+
+#output {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-block {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    background-color: ;
+    margin: 5px 0;
+}
+
+
+
+
+
+
+
 /*          FOOTER               */
 
 footer {

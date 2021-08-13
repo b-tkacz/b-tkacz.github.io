@@ -21,20 +21,12 @@ window.onclick = function(event) {
 }
 
 
-// DROPDOWN 
 
-// let dropBtn = document.getElementById("dropBtn")
-// let dropDownContent = document.getElementById("dropDownContent")
-
-// dropBtn.onclick = function() {
-//    if (dropDownContent.style.display = "none") {
-//      dropDownContent.style.display = "block";
-//     }
-//     else if(dropDownContent.style.display = "block") {
-//       onclick.dropDownContent.style.display = "none"
-//     }
-// }
-
-
-
-
+document.getElementById('output').style.visibility = 'hidden';
+document.getElementById('lbsInput').addEventListener('input', function(e){
+  document.getElementById('output').style.visibility = 'visible';
+  let lbs = e.target.value;
+  document.getElementById('gramsOutput').innerHTML = lbs/0.0022046;
+  document.getElementById('kgOutput').innerHTML = lbs/2.2046;
+  document.getElementById('ozOutput').innerHTML = lbs*16;
+});
