@@ -321,7 +321,7 @@ form {
 
 
 
-/*                  CONTACT FORM         */
+/*                  CONTACT FORM MODAL            */    
 
 input, textarea  {
     margin-top: 15px;
@@ -349,28 +349,30 @@ button {
     background-color: var(--secondary-bg);
     color: var(--primary);
     font-size: medium;
+    
 }
 
 
 .close {
     float: right;
+    padding: 0;
     width: 10%;
     margin: 9px;
     font-size: 1.35em;
 }
 
-button:hover {
+.send:hover {
     background-color: var(--primary);
     color: var(--primary-bg);
 }
 
 
-/*          MODAL            */
+
 
 .section-modal {
     display: none;
     position: fixed;
-    z-index: 1; 
+    z-index: 101; 
     right: 0;
     top: 0;
     width: 100%; 
@@ -388,7 +390,7 @@ button:hover {
 }
 
 
-/*      PROJECT 1        */
+/*      LOADING SCREEN        */
 
 .loading-text {
     font-family: 'Spartan', sans-serif;
@@ -495,7 +497,7 @@ button:hover {
     width: 100%;
 }
 
-button {
+.action-buttons button {
     background-color:#fff;
     border: none;
     color: #aaa;
@@ -516,7 +518,7 @@ button:focus {
 .slider-container .action-buttons button {
     position: absolute;
     left: 35%;
-    top: 50%;
+    top: 52%;
     z-index: 100;
     padding: 5px;
     width: 35px;
@@ -608,3 +610,14 @@ footer a:hover .tooltip-footer {
     padding: 5px;
    }
   }
+
+@media screen and (max-width: 515px ) {
+    .left-slide h1{
+        font-size: 25px;
+    }
+
+    .left-slide p {
+        text-align: center;
+    }
+    
+}
