@@ -249,6 +249,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    max-width: 450px;
 }
 
 .work-img img {
