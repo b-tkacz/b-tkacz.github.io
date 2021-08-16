@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bartosz Tkacz Portfolio</title>   
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
+    <script src="https://kit.fontawesome.com/dfbef210a3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!--                NAVBAR                   -->
+
+<div class="nav">
+    <div class="nav-container">
+        <div class="nav-container--box">
+            <a href="/index.html">Home</a>
+            <a href="/index.html#work">Work</a>
+            <a href="/index.html#projects">Projects</a>  
+            <a href="/index.html#about">About</a>                    
+            <a href="#contact" id="openModal">Contact</a>
+        </div>
+    </div>
+</div>
+
+    <!-- main section  -->
+
+
+<div class="quote-container">
+    <div class="quote-section">
+                <div class="quote-text">
+                    <p class="quote" id="quote"></p>
+                </div>  
+            <p class="signature"> - Ron Swanson</p>
+            <button class="get-quote" id="getQuote" onClick="window.location.reload();">Swanson It</button>        
+    </div>
+</div>
+
+
+
+
+    <!--        CONTACT FORM SECTION           -->
+    <div class="section-modal" id="modal">
+        <div class="section-form"  id="contact">
+            <button class="close">&times;</button>
+            <h1>Contact me</h1> 
+            <p>Feel free to leave 
+                some feedback or message me about work
+                </p>
+            <form action="https://formspree.io/f/myyldlww" method="POST">
+                <label>
+                    <!-- email: -->
+                    <input type="email" name="_replyto" placeholder="Your email" required>
+                </label>
+                <label>
+                    <!-- message: -->
+                    <textarea name="message" placeholder="Your message" required></textarea>
+                </label>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-section">
+            <a href="https://pl.linkedin.com/in/bartosz-tkacz" target="blank">
+                <i class="fab fa-linkedin-in"></i>
+                <span class="tooltip-footer">Bartosz Tkacz on LinkedIn</span>
+            </a>
+            <a href="mailto: bartosz.tkacz@protonmail.com">
+                <i class="fas fa-envelope" ></i>
+                <span class="tooltip-footer">bartosz.tkacz@protonmail.com</span>
+            </a>
+            <a href="https://github.com/b-tkacz" target="blank">
+                <i class="fab fa-github"></i>
+                <span class="tooltip-footer">@b-tkacz on GitHub</span>
+            </a>
+        </div>
+    </footer>
+
+    <script src="/js/quotes.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+</html>
