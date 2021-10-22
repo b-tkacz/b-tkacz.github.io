@@ -14,6 +14,8 @@ html {
     --secondary-bg: #0C2231;
     --primary: #D0EDF1;
     --secondary: #EBF4FA; 
+    --card-text: #eaaa14;
+    --card-bg: #342779;
 }
 
 body {
@@ -58,7 +60,7 @@ body {
     letter-spacing: 3px;
     position: static;
     text-decoration: underline var(--secondary) 3px solid; 
-    transition: 1s;  
+    transition: 1s;      
 }
 
 /*          DROPDOWN         */
@@ -192,7 +194,7 @@ img {
 .section {
     display: flex;
     justify-content: center;
-    color: var(--secondary);
+    color: var(--card-text);
     margin-bottom: 200px;
 }
 
@@ -209,9 +211,12 @@ img {
     justify-content: center;
 }
 
+
+
 .section-about {
     max-width: 90%;
     padding-top: 50px;
+    
     /* margin-bottom: 250px; */
 }
 
@@ -233,17 +238,20 @@ img {
 .section p {
     max-width: 450px;    
     text-align: justify;
+    color: var(--primary);
 }
 
 
 .section img {
     padding-bottom: 25px;
+    border-radius: 15px;
+    
 }
 
-.section img:hover {
+/* .section img:hover {
     filter: brightness(50%);
     transition: 0.5s;
-} 
+}  */
 
 .work-content {
     display: flex;
@@ -264,10 +272,13 @@ img {
     flex-wrap: wrap;
     padding: 25px 15px;
     margin-bottom: 15px;
+    background-color: var(--card-bg);
+    
+    border-radius: 5px;
 }
 
 .work-img:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgb(0, 0, 0);
   }
 
 .work-img a {
@@ -653,7 +664,7 @@ footer a {
 
 footer i:hover {
     color: var(--primary-bg);
-    background-color: var(--primary);
+    background-color: var(--card-text);
     transition: 1s;
 }
 
