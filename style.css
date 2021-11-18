@@ -215,9 +215,7 @@ img {
 
 .section-about {
     max-width: 90%;
-    padding-top: 50px;
-    
-    /* margin-bottom: 250px; */
+    padding-top: 50px;    
 }
 
 .section-work {
@@ -402,8 +400,7 @@ button {
     border: none;
     background-color: var(--secondary-bg);
     color: var(--primary);
-    font-size: medium;
-    
+    font-size: medium;    
 }
 
 
@@ -626,6 +623,29 @@ button:focus {
 .get-quote {
     background-color: var(--card-bg);
     margin-left: 30%;
+}
+
+/* ACCESSIBILITY TESTER */
+
+.access-box {
+    display: flex;
+    justify-content: center;
+    color: var(--card-text);
+    margin-bottom: 200px;
+    text-align: center;
+}
+
+
+#form {
+    display: flex;
+    padding-top: 12%;
+    justify-content: center;
+    align-items: center;
+}
+
+.access-btn {
+    background-color: var(--card-bg);
+    width: 25%;
 }
 
 
