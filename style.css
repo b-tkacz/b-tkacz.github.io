@@ -643,6 +643,10 @@ button:focus {
     align-items: center;
 }
 
+.loader {
+    visibility: hidden;
+}
+
 .access-btn {
     background-color: var(--card-bg);
     width: 25%;

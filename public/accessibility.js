@@ -4,7 +4,7 @@ const testAccessibility = async (e) => {
 
     const url = document.querySelector('#url').value 
     
-    if(url === '') {
+    if (url === '') {
         alert('Please add a url')
     } else {
         setLoading()
