@@ -12,13 +12,12 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      # Install npm dependencies, cache them correctly
-      # and run all Cypress tests
+
       - name: Cypress run in ${{ matrix.browsers }}
         uses: cypress-io/github-action@v6
         with:
           build: echo "skip build"
           start: echo "skip start"
           wait-on: "https://b-tkacz.github.io"
-          wait-on-timeout: 60
-          browser: chrome
+          wait-on-timeout: 120
+          browser: ${{ matrix.browsers }}
