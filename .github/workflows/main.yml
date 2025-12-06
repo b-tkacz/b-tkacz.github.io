@@ -8,29 +8,23 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        browsers: [chrome, firefox, edge]
+        browser: [chrome, firefox, edge]
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Cypress run in ${{ matrix.browsers }}
+      - name: Cypress run in ${{ matrix.browser }}
         uses: cypress-io/github-action@v6
         with:
           build: echo "skip build"
           start: echo "skip start"
           wait-on: "https://b-tkacz.github.io"
           wait-on-timeout: 120
-          browser: ${{ matrix.browsers }}
-          command: npx cypress run --browser ${{ matrix.browsers }} --reporter-options reportDir=cypress/reports/${{ matrix.browsers }}
+          browser: ${{ matrix.browser }}
 
-      - name: Merge Mochawesome Reports
-        run: npx mochawesome-merge cypress/reports/${{ matrix.browsers}}/*.json > cypress/reports/${{ matrix.browsers}}/merged-report.json
-
-      - name: Generate Mochawesome HTML Report
-        run: npx merge cypress/reports/${{ matrix.browsers}}/merged-report.json --reportDir cypress/reports/${{ matrix.browsers}} -f "${{ matrix.browsers}}--report.html"
-
-      - name: Upload Reports
+      - name: Upload Cypress reports
         uses: actions/upload-artifact@v4
+        if: always()
         with:
-          name: Cypress HTML Report ${{ matrix.browsers }}
-          path: cypress/reports/${{ matrix.browsers}}
+          name: cypress-reports-${{ matrix.browser }}
+          path: cypress/screenshots/
