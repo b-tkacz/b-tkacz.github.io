@@ -20,5 +20,8 @@
   "dependencies": {
     "express": "^4.17.1",
     "pa11y": "^6.1.1"
+  },
+  "devDependencies": {
+    "cypress": "^15.7.1"
   }
 }
