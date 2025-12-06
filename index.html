@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bartosz Tkacz Portfolio - Test Automation Engineer">
     <title>Bartosz Tkacz Portfolio</title>   
     <link rel="stylesheet" href="/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -47,11 +48,10 @@
     <div class="intro-container">
         <div class="intro">
             <p id="intro-title">Welcome to my portfolio</p>
-            <p>I'm a frontend developer with a background in arts and music. 
-                I went to arts high school, 
-                left a musician and now became a front end developer.
+            <p>I'm Bartosz, a Test Automation Engineer.
+                This is my personal website where I showcase my work and projects. 
             </p>
-            <p>I like simple and minimalistic design. </p>
+            <!-- <p>I like simple and minimalistic design. </p> -->
         </div>
     </div>
     
@@ -61,8 +61,22 @@
 
     <!--              WORK SECTION           -->
 
-    <div class="section" >
-        <div class="section-text" id="work">
+    <!-- <div class="section" > -->
+        <div class="section" id="work">
+            <div class="section-text" id="about-txt">
+                <div class="section-about" >
+                    <h1>What did I work on?</h1>
+                    <p class="about-content">Since January 2022 I worked for THG Ingenuity where I developed and maintained Cypress test suites for three Angular applications, including customer-facing and internal UIs as well as API tests with Cypress. 
+                                Integrated permission-based tests into isolated, automated Concourse CI pipelines to validate access control and application stability.
+                                Complementary manual testing included reporting countless critical bugs and actively contributing to product design, development discussions, 
+                                and resolving minor issues within the Angular codebase.
+
+                            </div>
+
+                </div>
+        </div>
+        
+        <!-- <div class="section-text" id="work">
             <div class="section-work">
                 <h1>WORK</h1>
             </div>
@@ -71,27 +85,20 @@
                 </p>
             <div class="work-content">
                 <div class="work-img">
-                    <a href="https://www.ujdzienasucho.pl" target="_blank" rel="noreferrer noopener">
-                        <img src="/img/ujdzie na sucho screen.png "  alt="website print screen">
+                    <a href="https://www.thgingenuity.com" target="_blank" rel="noreferrer noopener">
+                        <img src="https://fcdn.thg-corporate.com/thg-ingenuity/ingenuity_logo_white_048ffc6856.svg"  alt="website print screen">
                         <div class="description-box">
-                            <div class="description">Commercial project made using HTML, CSS. 
-                                Contains flexbox, css grid, API, google maps. Mobile friendly and responsive. 
+                            <div class="description">Developed and maintained Cypress test suites for three Angular applications, including customer-facing and internal UIs as well as API tests with Cypress. 
+                                Integrated permission-based tests into isolated, automated Concourse CI pipelines to validate access control and application stability.
+                                Complementary manual testing included reporting countless critical bugs and actively contributing to product design, development discussions, 
+                                and resolving minor issues within the Angular codebase.
+
                             </div>
                         </div>                       
                     </a>
                 </div>
-                <div class="work-img">
-                    <a href="https://badxxample.wixsite.com/badxxample" target="_blank" rel="noreferrer noopener">
-                        <img src="/img/badxxample screen.png" alt="second website print screen">
-                        <div class="description-box">
-                            <div class="description">My first website. I made it with wix creation tool. 
-                            Didn't do any coding on this one but i like the minimalistic design. 
-                            </div>
-                        </div>
-                    </a>
-                </div>
             </div> 
-        </div>
+        </div> -->
     </div>
 
 
@@ -108,11 +115,11 @@
             <div class="work-content">
                 <div class="work-img">
                     <a href="/loading-site.html" target="_blank" rel="noreferrer noopener">
-                        <img src="/img/loading-site.png "  alt="loading screen">
+                        <img src="/img/loading-site.png"  alt="loading screen">
                         <div class="description-box">
                             <div class="description">
                                 Simulation of a loading page. 
-                                Blurred image comes back to focus as the percentage number get's blurred away.
+                                Blurred image comes back to focus as the percentage number gets blurred away.
                             </div>
                         </div>
                     </a> 
@@ -141,9 +148,9 @@
                 <div class="work-img">
                     <a href="/quotes.html" target="_blank" rel="noreferrer noopener">
                         <img src="/img/Ron Swanson.jpg"  alt="Ron Swanson quotes">
-                        <div class="desctription-box">
+                        <div class="description-box">
                             <div class="description">
-                            Ron Swanson is a fictionary character, with epic quotes from the "Parks 
+                            Ron Swanson is a fictional character, with epic quotes from the "Parks 
                                 and Recreation" TV show. In this project I used an API. 
                             </div> 
                         </div>             
@@ -164,15 +171,18 @@
             <div class="section-text" id="about-txt">
                 <div class="section-about" >
                     <h1>So who am I?</h1>
-                    <p class="about-content">I live and work in Poland. <br>
-                        Working as a full time musician I got interested in sound implementation software and 
-                        found out that programming, or writing any code is deeply fascinating. 
-                        Figuring out problems, or just enjoying creating a nice design is incredibly 
-                        satisfactory. My deep background in arts and music taught me 
-                        openness to people's ideas. </p>
-                    <p class="about-content">Currently my focus is on improving my JavaScript skills. 
-                        To do that I will create a few small projects in the coming weeks. 
-                        They will be probably funny and I'll learn a lot working on them.</p>
+                    <p class="about-content">I live and work in Poland.</p>
+                    <p class="about-content">
+                        I had many jobs in the past however working in IT industry as a Test Automation Engineer is the best one yet 
+                        and one I don't see myself changing. When my ex told me that I'm good with finding problems I didn't know how right she was. 
+                        Figuring out issues, trying to foresee customers needs, potential bugs and edge cases is something I really enjoy doing. 
+                        My deep background in arts and music taught me 
+                        openness to people's ideas. 
+                    </p>
+                    <p class="about-content">Currently I'm learning Playwright. I can see the advantages it has over Cypress
+                        and has become quite popular recently. I believe that knowing multiple frameworks is a good skill to have.
+                        In the future I would like to learn backend languages like Python as well. Backend testing seems like an interesting field to explore.
+                    </p>
                     <p class="about-content">Every project is a learning experience to me and I am never bored.</p>
                 </div>
             </div>
@@ -206,7 +216,7 @@
         <!--         FOOTER          -->
     <footer>
         <div class="footer-section">
-            <a href="https://pl.linkedin.com/in/bartosz-tkacz" target="_blank">
+            <a href="https://pl.linkedin.com/in/bartosz-tkacz" target="_blank" rel="noopener noreferrer">
                 <i class="fab fa-linkedin-in"></i>
                 <span class="tooltip-footer">Bartosz Tkacz on LinkedIn</span>
             </a>
