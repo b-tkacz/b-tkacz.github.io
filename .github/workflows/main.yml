@@ -20,7 +20,6 @@ jobs:
           start: echo "skip start"
           wait-on: "https://b-tkacz.github.io"
           wait-on-timeout: 120
-          with:
           browser: ${{ matrix.browsers }}
           command: npx cypress run --browser ${{ matrix.browsers }} --reporter-options reportDir=cypress/reports/${{ matrix.browsers }}
 
