@@ -13,8 +13,8 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v6
         with:
-          build: false
-          start: false
+          build: echo "skip build"
+          start: echo "skip start"
           wait-on: "https://b-tkacz.github.io"
           wait-on-timeout: 60
           browser: chrome
