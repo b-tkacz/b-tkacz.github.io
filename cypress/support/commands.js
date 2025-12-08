@@ -23,3 +23,13 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+Cypress.Commands.add("checkHashNav", (name, hash) => {
+  cy.get(".nav-container--box a").contains(name).click();
+  cy.location("hash").should("eq", hash);
+  cy.get(hash).should("be.visible");
+});
+
+Cypress.Commands.add("shouldHavePlaceholder", (locator, placeholderName) => {
+  cy.get(locator).should("have.attr", "placeholder", placeholderName);
+});
