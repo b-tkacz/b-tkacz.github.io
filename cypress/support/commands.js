@@ -33,3 +33,6 @@ Cypress.Commands.add("checkHashNav", (name, hash) => {
 Cypress.Commands.add("shouldHavePlaceholder", (locator, placeholderName) => {
   cy.get(locator).should("have.attr", "placeholder", placeholderName);
 });
+Cypress.Commands.add("buttonClick", (locator) => {
+  cy.get(locator).should("be.visible").click();
+});
