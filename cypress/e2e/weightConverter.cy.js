@@ -11,5 +11,6 @@ describe("Weight Converter Page", () => {
 
   it("Convert Pounds to grams", () => {
     cy.get("input#lbsInput").type("10");
+    cy.get("#gramsOutput").should("have.value", "4535.92");
   });
 });
