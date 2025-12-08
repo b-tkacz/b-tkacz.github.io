@@ -1,8 +1,11 @@
-document.getElementById('output').style.visibility = 'hidden';
-document.getElementById('lbsInput').addEventListener('input', function(e){
-  document.getElementById('output').style.visibility = 'visible';
+document.getElementById("output").style.visibility = "hidden";
+document.getElementById("lbsInput").addEventListener("input", function (e) {
+  document.getElementById("output").style.visibility = "visible";
   let lbs = e.target.value;
-  document.getElementById('gramsOutput').innerHTML = lbs/0.0022046;
-  document.getElementById('kgOutput').innerHTML = lbs/2.2046;
-  document.getElementById('ozOutput').innerHTML = lbs*16;
+  document.getElementById("gramsOutput").innerHTML =
+    Math.round((lbs / 0.0022046) * 100) / 100;
+  document.getElementById("kgOutput").innerHTML =
+    Math.round((lbs / 2.2046) * 100) / 100;
+  document.getElementById("ozOutput").innerHTML =
+    Math.round(lbs * 16 * 100) / 100;
 });

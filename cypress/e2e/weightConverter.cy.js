@@ -8,4 +8,8 @@ describe("Weight Converter Page", () => {
     cy.get("h1.converter-title").should("have.text", "Weight Converter");
     cy.shouldHavePlaceholder("input#lbsInput", "Enter Pounds...");
   });
+
+  it("Convert Pounds to grams", () => {
+    cy.get("input#lbsInput").type("10");
+  });
 });
