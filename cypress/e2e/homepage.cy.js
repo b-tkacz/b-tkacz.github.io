@@ -62,7 +62,7 @@ describe("Homepage", () => {
         });
     });
 
-    it.only("Send a message and check response", () => {
+    it("Send a message and check response", () => {
       cy.intercept("POST", "https://formspree.io/*/*").as("formSubmit");
 
       const email = "input[type='email']";
