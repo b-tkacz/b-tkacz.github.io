@@ -33,6 +33,12 @@ Cypress.Commands.add("checkHashNav", (name, hash) => {
 Cypress.Commands.add("shouldHavePlaceholder", (locator, placeholderName) => {
   cy.get(locator).should("have.attr", "placeholder", placeholderName);
 });
+
 Cypress.Commands.add("buttonClick", (locator) => {
   cy.get(locator).should("be.visible").click();
+});
+
+Cypress.Commands.add("moveSliders", (locator) => {
+  cy.get(locator).click();
+  cy.get(".left-slide").should("have.css", "transform");
 });
