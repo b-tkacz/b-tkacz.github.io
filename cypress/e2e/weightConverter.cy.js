@@ -9,8 +9,16 @@ describe("Weight Converter Page", () => {
     cy.shouldHavePlaceholder("input#lbsInput", "Enter Pounds...");
   });
 
-  it("Convert Pounds to grams", () => {
-    cy.get("input#lbsInput").type("10");
-    cy.get("#gramsOutput").should("have.value", "4535.92");
+  [1, 10, 37.5, 100].forEach((lbs) => {
+    it(`converts ${lbs} lb correctly`, () => {
+      const expectedGrams = Math.round((lbs / 0.0022046) * 100) / 100;
+      const expectedKilograms = Math.round((lbs / 2.2046) * 100) / 100;
+      const expectedOunces = Math.round(lbs * 16 * 100) / 100;
+
+      cy.get("input#lbsInput").clear().type(String(lbs));
+      cy.get("#gramsOutput").should("have.text", expectedGrams.toString());
+      cy.get("#kgOutput").should("have.text", expectedKilograms.toString());
+      cy.get("#ozOutput").should("have.text", expectedOunces.toString());
+    });
   });
 });
