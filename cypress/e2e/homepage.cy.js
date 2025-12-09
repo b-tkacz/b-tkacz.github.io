@@ -36,6 +36,9 @@ describe("Homepage", () => {
   });
 
   describe("Contact Modal", () => {
+    const email = "input[type='email']";
+    const message = 'textarea[name="message"]';
+
     beforeEach(() => {
       cy.get("#openModal").click();
       cy.get("#modal").should("be.visible");
@@ -53,7 +56,6 @@ describe("Homepage", () => {
     });
 
     it("Should display correct placeholders in the contact form ", () => {
-      cy.get("#openModal").click();
       cy.get("#modal")
         .should("be.visible")
         .within(() => {
@@ -64,9 +66,6 @@ describe("Homepage", () => {
 
     it("Send a message and check response", () => {
       cy.intercept("POST", "https://formspree.io/*/*").as("formSubmit");
-
-      const email = "input[type='email']";
-      const message = 'textarea[name="message"]';
 
       cy.get(email).focus().type("test@email.com");
       cy.get(message).focus().type("This is a message from an automated test.");
