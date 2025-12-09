@@ -21,7 +21,7 @@ jobs:
           wait-on: "https://b-tkacz.github.io"
           wait-on-timeout: 120
           browser: ${{ matrix.browsers }}
-          command: npx cypress run --browser ${{ matrix.browsers }} --reporter-options reportDir=cypress/reports/${{ matrix.browsers }}
+          command: npx cypress run --config-file cypress.prod.config.js --browser ${{ matrix.browsers }} --reporter-options reportDir=cypress/reports/${{ matrix.browsers }}
 
       - name: Merge Mochawesome Reports
         run: npx mochawesome-merge cypress/reports/${{ matrix.browsers}}/*.json > cypress/reports/${{ matrix.browsers}}/merged-report.json
