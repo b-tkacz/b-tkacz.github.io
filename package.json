@@ -4,7 +4,11 @@
   "description": "<!-- Welcome to my portfolio. I'm constantly developing this project so feel free to leave some feedback and come back again!   -->",
   "main": "js/pa11y.js",
   "scripts": {
-    "test": "node js/pa11y"
+    "test": "node js/pa11y",
+    "cy:prod:open": "cypress open --config-file cypress.prod.json",
+    "cy:prod:run": "cypress run --config-file cypress.prod.json",
+    "cy:dev:open": "cypress open --config-file cypress.dev.json",
+    "cy:dev:run": "cypress run --config-file cypress.dev.json"
   },
   "repository": {
     "type": "git",
