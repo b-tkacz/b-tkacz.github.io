@@ -5,10 +5,10 @@
   "main": "js/pa11y.js",
   "scripts": {
     "test": "node js/pa11y",
-    "cy:prod:open": "cypress open --config-file cypress.prod.json",
-    "cy:prod:run": "cypress run --config-file cypress.prod.json",
-    "cy:dev:open": "cypress open --config-file cypress.dev.json",
-    "cy:dev:run": "cypress run --config-file cypress.dev.json"
+    "cy:prod:open": "cypress open --config-file cypress.prod.config.js --browser electron",
+    "cy:prod:run": "cypress run --config-file cypress.prod.config.js",
+    "cy:dev:open": "cypress open --config-file cypress.dev.config.js",
+    "cy:dev:run": "cypress run --config-file cypress.dev.config.js"
   },
   "repository": {
     "type": "git",
