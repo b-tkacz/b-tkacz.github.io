@@ -19,7 +19,7 @@ describe("Image Slider Page", () => {
   it("should loop to the last slide when clicking up on the first slide", () => {
     // Click up multiple times to verify looping behavior
     for (let i = 0; i < 5; i++) {
-      cy.get(".up-button").click();
+      cy.buttonClick(".up-button");
     }
   });
 });

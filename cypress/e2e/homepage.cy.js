@@ -40,7 +40,7 @@ describe("Homepage", () => {
     const message = 'textarea[name="message"]';
 
     beforeEach(() => {
-      cy.get("#openModal").click();
+      cy.buttonClick("#openModal");
       cy.get("#modal").should("be.visible");
     });
 
@@ -70,7 +70,7 @@ describe("Homepage", () => {
       cy.get(email).focus().type("test@email.com");
       cy.get(message).focus().type("This is a message from an automated test.");
 
-      cy.get('button[type="submit"]').click();
+      cy.buttonClick('button[type="submit"]');
       cy.wait("@formSubmit").then((interception) => {
         expect(interception.response.statusCode).to.equal(302);
         expect(interception.request.body).to.include(
